@@ -1,0 +1,55 @@
+/* Constants! */
+:root
+{
+	/* todo: fill in template colors! */
+	--link-text: #e18f5e;
+	--link-text-highlighted: #e6a279;
+	--link-text-clicked: #ebb493;
+	--link-text-shadow: #582828b0;
+
+    --transition-time: 0.0875s;
+}
+
+/* Generics/overrides */
+html
+{
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+
+    /* todo: import some of the project's fonts from google fonts! ~~~~~~~~~~~~~~~~~ */
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a
+{
+    text-decoration: underline;
+    color: var(--link-text);
+    -webkit-transition: color var(--transition-time);
+       -moz-transition: color var(--transition-time);
+         -o-transition: color var(--transition-time);
+            transition: color var(--transition-time);
+    text-shadow: 1px 1px 2px var(--link-text-shadow);
+}
+a:hover
+{
+    cursor: pointer;
+    color: var(--link-text-highlighted)
+}
+a:active
+{
+    color: var(--link-text-clicked)
+}
