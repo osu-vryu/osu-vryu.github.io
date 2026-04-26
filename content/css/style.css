@@ -82,8 +82,9 @@ a:active
     font-style: normal;
 }
 li {
-    margin-left: 15px;
+    margin-top: 3px;
     margin-bottom: 3px;
+    margin-left: 15px;
 }
 
 /* Background */
@@ -195,6 +196,11 @@ body
 .content-box *:not(img)
 {
     max-width: 55vw;
+    text-wrap: wrap;
+}
+.content-box.small *:not(img)
+{
+    max-width: 32vw;
     text-wrap: wrap;
 }
 .content-box img
