@@ -19,15 +19,14 @@
 
     --border: #FFFFFF;
 
-	--link-text: #e18f5e; /* 5a0606*/
-	--link-text-highlighted: #e6a279;
-	--link-text-clicked: #ebb493;
-	--link-text-shadow: #582828b0;
+	--link-text: #283d78; /* 5a0606*/
+	--link-text-highlighted: #4061bf;
+	--link-text-clicked: #5f78c0;
+	--link-text-shadow: #2c4554cf;
 
     --backup-background: #FFFFFF;
 
     --transition-time: 0.0875s;
-    --blur-size: 4px;
 }
 
 /* Generics/overrides */
@@ -82,6 +81,10 @@ a:active
     font-weight: 600;
     font-style: normal;
 }
+li {
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
 
 /* Background */
 #background-image
@@ -112,54 +115,86 @@ body
     border: 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
 }
 #main-scroller
 {
     width: 100vw;
     height: max-content;
-    flex: 0 1 auto;
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
 
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scrollbar-color: var(--col2-background) var(--col2-content);
+    scrollbar-color: var(--col2-content) var(--col2-background);
 }
 #page-header
 {
-    min-height: 40px;
     height: fit-content;
-    padding: 30px 20px;
+    padding: 15px 20px 30px 20px;
     margin: 40px 20px;
     background-color: var(--header-background);
     box-shadow: 4px 4px 4px var(--header-shadow);
     border-radius: 20px;
 
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;
     text-align: center;
+}
+#page-header *
+{
+    max-width: 370px;
 }
 #page-header h1
 {
-    font-size: 43px;
+    font-size: 48px;
+
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.col-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
+}
+.mini-col
+{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .content-box
 {
     min-width: fit-content;
-    max-width: 70%;
     height: fit-content;
-    padding: 15px 32px;
+    padding: 15px 32px 20px 32px;
     margin: 0px 20px 30px 20px;
 
     border: 4px solid var(--border);
     border-radius: 20px;
 
     text-align: left;
+    text-wrap: wrap;
+}
+.content-box *:not(img)
+{
+    max-width: 55vw;
+    text-wrap: wrap;
+}
+.content-box img
+{
+    max-width: 55vw;
+    text-wrap: wrap;
+}
+.content-box p:not(.no-indent)
+{
+    text-indent: 2em;
 }
 .content-box.col1
 {
@@ -179,6 +214,10 @@ body
 .content-box.col2:active { background-color: var(--col2-background-clicked); }*/
 .content-box h2
 {
-    padding: 5px 35px;
+    padding: 5px 15px;
     text-align: center;
+}
+spacer
+{
+    min-height: 50px;
 }
