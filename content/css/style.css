@@ -27,6 +27,9 @@
     --backup-background: #FFFFFF;
 
     --transition-time: 0.0875s;
+
+    --blur-size: 6.0;
+    --background-scale: 1.5;
 }
 
 /* Generics/overrides */
@@ -104,6 +107,7 @@ li {
     vertical-align: middle;
 
     filter: blur(var(--blur-size));
+    scale: var(--background-scale);
 }
 
 /* Main page organization */
@@ -138,7 +142,7 @@ body
 {
     height: fit-content;
     padding: 15px 20px 30px 20px;
-    margin: 40px 20px;
+    margin: 35px 20px;
     background-color: var(--header-background);
     box-shadow: 4px 4px 4px var(--header-shadow);
     border-radius: 20px;
@@ -148,14 +152,26 @@ body
 #page-header *
 {
     max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
 }
-#page-header h1
+#page-header img
 {
     font-size: 48px;
 
-    font-family: "Eagle Lake", serif;
+    font-family: "Eagle Lake", "Tsukimi Rounded", serif;
     font-weight: 400;
     font-style: normal;
+}
+#page-header #logo
+{
+    max-width: 25vw;
+    max-height: 25vw;
+}
+#page-header p
+{
+    padding-left: auto;
+    padding-right: auto;
 }
 .col-container
 {
