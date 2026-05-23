@@ -24,6 +24,11 @@
 	--link-text-clicked: #5f78c0;
 	--link-text-shadow: #2c4554cf;
 
+    --col1-highlight-text: #7ee779;
+    --col1-highlight-text-shadow: #3a2423db;
+    --col2-highlight-text: #a2ff88;
+    --col2-highlight-text-shadow: #11110c;
+
     --backup-background: #FFFFFF;
 
     --transition-time: 0.0875s;
@@ -89,12 +94,20 @@ li {
     margin-bottom: 3px;
     margin-left: 15px;
 }
+.col1 em {
+    color: var(--col1-highlight-text);
+    text-shadow: 1.25px 1.25px 2.25px var(--col1-highlight-text-shadow);
+}
+.col2 em {
+    color: var(--col2-highlight-text);
+    text-shadow: 1.25px 1.25px 2.25px var(--col2-highlight-text-shadow);
+}
 
 /* Background */
 #background-image
 {
     z-index: -1;
-    position: fixed;
+    position: absolute;
     top: calc(-2*var(--blur-size));
     min-width: calc(100vw + 2*var(--blur-size));
     min-height: calc(100vh + 2*var(--blur-size));
@@ -180,10 +193,13 @@ body
 }
 .mini-col
 {
-    display: flex;
+    /*display: flex;
     flex: 0 1 auto;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;*/
+
+    display: grid;
     align-items: center;
 }
 .mini-col .content-box *:not(img)
@@ -193,12 +209,13 @@ body
 }
 .mini-col .content-box img
 {
-    max-width: 28vw;
-    max-height: 30vw;
+    max-width: 90%;
+    max-height: 17.5vw;
 }
 .content-box
 {
     min-width: fit-content;
+    max-width: 825px;
     height: fit-content;
     padding: 15px 32px 20px 32px;
     margin: 0px 20px 30px 20px;
@@ -229,7 +246,7 @@ body
     margin-left: auto;
     margin-right: auto;
     margin-top: 2px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 
     border: var(--border);
     border-style: solid;
@@ -252,13 +269,18 @@ body
     background-color: var(--col2-background);
     box-shadow: 4px 4px 4px var(--col2-shadow);
 }
+.content-box.small-width
+{
+    min-width: auto;
+    max-width: 640px;
+}
 /*.content-box.col1:hover { background-color: var(--col1-background-highlighted); }
 .content-box.col1:active { background-color: var(--col1-background-clicked); }
 .content-box.col2:hover { background-color: var(--col2-background-highlighted); }
 .content-box.col2:active { background-color: var(--col2-background-clicked); }*/
 .content-box h2
 {
-    padding: 5px 15px;
+    padding: 0px 10px 8px 10px;
     text-align: center;
 }
 spacer
