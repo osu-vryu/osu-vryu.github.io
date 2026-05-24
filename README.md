@@ -1,16 +1,18 @@
-# VRyu
+# VRyu Landing Page
 
-## What is VRyu?
-VRyu is a new VR game focused on the learnings, practice, and training of martial arts and the Samurai. This game is currently being developed by Oregon State University students for their Senior Software Engineering Project. 
+## About
+VRyu is an immersive, fun VR experience teaching newcomers traditional Japanese swordsmanship. It was developed by Oregon State University students for our Senior Software Engineering Project, and [this page](https://osu-vryu.github.io/) is the primary digital public-facing front-end of the project.
 
-## Team Roster 
+## Further Information
+For more info, the codebase, and assets used in our project, visit our [main repository](https://github.com/osu-vryu/VRyu).
 
-### Game Design & Programming 
-- Cade Wisecaver    - email: wisecavc@oregonstate.edu
-- Dennis Aguilar    - email: aguilade@oregonstate.edu
-- Reed Evertt       - email: everttr@oregonstate.edu
-- Sunil Jain        - email: jainsu@oregonstate.edu
+## Credits
+Landing page designed and implemented by [Reed Evertt](mailto:reed@evertt.com).
 
-### Technical Art  
-- Dylan Keyhantaj   - email: keyhantd@oregonstate.edu
-- Téa Kidder        - email: kiddert@oregonstate.edu
+The full VRyu team consists of:
+- [Dylan Keyhantaj](mailto:dylan.keyhantaj@gmail.com)
+- [Téa Kidder](mailto:teakidder@gmail.com)
+- [Reed Evertt](mailto:reed@evertt.com)
+- [Cade Wisecaver](mailto:cade.wisecaver@protonmail.com)
+- [Dennis Aguilar](aguilar.jr.dennis@gmail.com)
+- [Sunil Jain](mailto:suniljain0504@gmail.com)
