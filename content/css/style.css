@@ -6,28 +6,25 @@
     --header-shadow: #404040b0;
 
     --col1-content: #361D16;
-    --col1-background: #FF5A37;
-    --col1-background-highlighted: #F57C6D;
-    --col1-background-clicked: #B4574A;
+    --col1-background: #FF775A; /* #FF5A37; */
     --col1-shadow: #582828b0;
 
     --col2-content: #473D1E;
-    --col2-background: #FFB143;
-    --col2-background-highlighted: #FFBF7B;
-    --col2-background-clicked: #C78D45;
+    --col2-background: #FFBF64; /* #FFB143; */
     --col2-shadow: #494c34b0;
 
     --border: #FFFFFF;
 
-	--link-text: #30498f; /* 5a0606 */
-	--link-text-highlighted: #4061bf;
-	--link-text-clicked: #5f78c0;
-	--link-text-shadow: #2c4554cf;
+	--link-text: #35ecff;
+	--link-text-highlighted: #80f3ff;
+	--link-text-clicked: #bff9ff;
+    --link-text-shadow-col1: #15283fd9;
+	--link-text-shadow-col2: #15202d;
 
-    --col1-highlight-text: #7ee779;
+    --col1-highlight-text: #75ff77; /* #7ee779; */
     --col1-highlight-text-shadow: #3a2423db;
-    --col2-highlight-text: #a2ff88;
-    --col2-highlight-text-shadow: #11110c;
+    --col2-highlight-text: #96ff70; /* #a2ff88; */
+    --col2-highlight-text-shadow: #0e0f0afa;
 
     --backup-background: #FFFFFF;
 
@@ -73,7 +70,6 @@ a
        -moz-transition: color var(--transition-time);
          -o-transition: color var(--transition-time);
             transition: color var(--transition-time);
-    text-shadow: 1px 1px 2px var(--link-text-shadow);
 }
 a:hover
 {
@@ -83,6 +79,14 @@ a:hover
 a:active
 {
     color: var(--link-text-clicked)
+}
+.col1 a
+{
+    text-shadow: 1px 1px 2px var(--link-text-shadow-col1);
+}
+.col2 a
+{
+    text-shadow: 1px 1px 2px var(--link-text-shadow-col2);
 }
 .alt-font, .content-box h2 {
     font-family: "Tsukimi Rounded", sans-serif;
@@ -209,6 +213,7 @@ body
 }
 .mini-col .content-box img
 {
+    background-color: white;
     max-width: 90%;
     max-height: 17.5vw;
 }
@@ -274,10 +279,6 @@ body
     min-width: auto;
     max-width: 640px;
 }
-/*.content-box.col1:hover { background-color: var(--col1-background-highlighted); }
-.content-box.col1:active { background-color: var(--col1-background-clicked); }
-.content-box.col2:hover { background-color: var(--col2-background-highlighted); }
-.content-box.col2:active { background-color: var(--col2-background-clicked); }*/
 .content-box h2
 {
     padding: 0px 10px 8px 10px;
