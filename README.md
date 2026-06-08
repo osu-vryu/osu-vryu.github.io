@@ -1,7 +1,7 @@
 # VRyu Landing Page
 
 ## About
-VRyu is an immersive, fun VR experience teaching newcomers traditional Japanese swordsmanship. It was developed by Oregon State University students for our senior engineering project, and [this page](https://osu-vryu.github.io/) is the primary digital public-facing front-end of the project.
+VRyu is an immersive, fun VR experience teaching newcomers traditional Japanese swordsmanship. It was developed by Oregon State University students for our senior engineering project, and [this page](https://osu-vryu.github.io/) is the primary digital public-facing front-end of the project, along with our [itch page](https://vryu.itch.io/vryu).
 
 ## Further Information
 For more info, the codebase, and assets used in our project, visit our [main repository](https://github.com/osu-vryu/VRyu).
