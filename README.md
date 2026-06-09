@@ -15,7 +15,7 @@ VRyu consists of:
 - [Téa Kidder](mailto:teakidder@gmail.com)
 - [Reed Evertt](mailto:reed@evertt.com)
 - [Cade Wisecaver](mailto:cade.wisecaver@protonmail.com)
-- [Dennis Aguilar](aguilar.jr.dennis@gmail.com)
+- [Dennis Aguilar](mailto:aguilar.jr.dennis@gmail.com)
 - [Sunil Jain](mailto:suniljain0504@gmail.com)
 
 ### MIME Team (Controller Peripheral)
